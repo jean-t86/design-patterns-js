@@ -18,7 +18,8 @@ const NpcFactory = (function() {
    */
   class Npc {
     /**
-     * An attack method for the NPC
+     * An attack method for the NPC. In practice, this would be a state
+     * transition to the Attack state in the AI's FSM.
      */
     attack() {
       console.log('Attacking!');
@@ -38,7 +39,8 @@ const NpcFactory = (function() {
    */
   class Ninja extends Npc {
     /**
-     * The attack method for the Ninja
+     * An attack method for the Ninja. In practice, this would be a state
+     * transition to the Attack state in the AI's FSM.
      */
     attack() {
       this.throwShuriken();
@@ -57,7 +59,8 @@ const NpcFactory = (function() {
    */
   class Soldier extends Npc {
     /**
-     * The attack method for the Soldier
+     * An attack method for the Soldier. In practice, this would be a state
+     * transition to the Attack state in the AI's FSM.
      */
     attack() {
       this.shoot();

@@ -1,3 +1,11 @@
+/**
+ * Implementation based on a digest of the following articles:
+ * 
+ * https://www.digitalocean.com/community/tutorials/js-js-singletons
+ * https://www.sitepoint.com/javascript-design-patterns-singleton/
+ * http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html
+ */
+
 module.exports = (function() {
   /**
    * A class definition wrapped in a closure to implement

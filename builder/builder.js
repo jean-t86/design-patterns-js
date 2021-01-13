@@ -1,3 +1,10 @@
+/**
+ * Implementation based on a digest of the following articles:
+ *
+ * https://www.dofactory.com/javascript/design-patterns/builder
+ * https://dzone.com/articles/design-patterns-the-builder-pattern
+ */
+
 module.exports = (function() {
   /**
    * A class definition wrapped in a closure to implement

@@ -1,3 +1,11 @@
+/**
+ * Implementation based on a digest of the following articles:
+ *
+ * https://en.wikipedia.org/wiki/Factory_method_pattern#Structure_2
+ * https://refactoring.guru/design-patterns/factory-method
+ * https://www.dofactory.com/javascript/design-patterns/factory-method
+ */
+
 const NpcType = {
   Ninja: 1,
   Soldier: 2,

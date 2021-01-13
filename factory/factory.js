@@ -23,6 +23,14 @@ const NpcFactory = (function() {
     attack() {
       console.log('Attacking!');
     }
+
+    /**
+     * A method to determine if the player is within line of sight
+     * @return {boolean} True if NPC can see player, false otherwise
+     */
+    isPlayerInSight() {
+      return true;
+    }
   }
 
   /**

@@ -1,7 +1,12 @@
 const {NpcFactory, NpcType} = require('./factory.js');
 
-const ninja = NpcFactory.make(NpcType.Ninja);
-ninja.attack();
+const npcs = [];
 
-const soldier = NpcFactory.make(NpcType.Soldier);
-soldier.attack();
+npcs.push(NpcFactory.make(NpcType.Ninja));
+npcs.push(NpcFactory.make(NpcType.Soldier));
+
+npcs.forEach((npc) => {
+  if (npc.isPlayerInSight()) {
+    npc.attack();
+  }
+});
